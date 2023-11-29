@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Project</title>
+</head>
+<body>
+    <h1>Categorías</h1>
+    <ul>
+        {% for categoria in categorias %}
+            <li>{{ categoria.nombre }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Productos</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>{{ producto.nombre }} - {{ producto.categoria }} - {{ producto.precio }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Clientes</h1>
+    <ul>
+        {% for cliente in clientes %}
+            <li>{{ cliente.nombre }} - {{ cliente.direccion }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
